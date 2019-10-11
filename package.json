@@ -10,5 +10,9 @@
   "useWorkspaces": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "prerelease": "lerna run build",
+    "release": "lerna publish"
+  }
 }
