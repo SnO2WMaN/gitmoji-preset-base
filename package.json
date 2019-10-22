@@ -17,13 +17,18 @@
     "url": "git+https://github.com/carloscuesta/gitmoji.git"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "ava -v"
   },
   "bugs": {
     "url": "https://github.com/carloscuesta/gitmoji/issues"
   },
   "devDependencies": {
+    "@conten2/eslint-config": "^2.0.1",
     "@conten2/prettier-config": "^1.0.0",
+    "ava": "^2.4.0",
+    "eslint": "^6.5.1",
     "prettier": "^1.18.2",
     "rollup": "^1.23.1",
     "rollup-plugin-json": "^4.0.0",
